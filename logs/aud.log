@@ -1,0 +1,10 @@
+/data/summereunann/neurico-workspaces/sgd_escape_time_distributions_20261030_140000_math01/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+digits_wd0.001_s3_p1__sgd_ nobar n 6 share_bar 0.0 d_quench [0.533 0.533 0.533 0.533 0.533 0.533] d_polish [0.5333 0.5333 0.5333 0.5333 0.5333 0.5333] dL [-5.6e-05 -5.6e-05 -5.6e-05 -5.6e-05 -5.6e-05 -5.6e-05] maxgn 2e-12 minlmin 3.2e-04
+digits_wd0.001_s3_p1__sgd_ bar n 0 share_bar 0.0 d_quench [] d_polish [] dL [] maxgn 0e+00 minlmin 0.0e+00
+fmnist_wd0.0001_s2_p3__sgd nobar n 6 share_bar 0.29 d_quench [0.051 0.133 0.074 0.067 0.171 0.339] d_polish [0. 0. 0. 0. 0. 0.] dL [-0. -0.  0. -0. -0. -0.] maxgn 4e-10 minlmin 9.1e-05
+fmnist_wd0.0001_s2_p3__sgd bar n 6 share_bar 0.29 d_quench [8.485 8.136 8.409 8.063 7.938 8.122] d_polish [8.5465 8.1966 8.5465 8.1966 8.1966 8.1966] dL [-0.002275 -0.003496 -0.002275 -0.003496 -0.003496 -0.003496] maxgn 2e-10 minlmin 1.0e-04
+fmnist_wd0.0001_s4_p3__sgd nobar n 6 share_bar 0.73 d_quench [0.273 0.221 0.064 0.365 0.174 0.225] d_polish [0. 0. 0. 0. 0. 0.] dL [0. 0. 0. 0. 0. 0.] maxgn 1e-09 minlmin 1.0e-04
+fmnist_wd0.0001_s4_p3__sgd bar n 6 share_bar 0.73 d_quench [1.99  2.058 2.073 1.826 2.083 2.078] d_polish [2.2278 2.2278 2.2278 2.2278 2.2278 2.2278] dL [1.e-05 1.e-05 1.e-05 1.e-05 1.e-05 1.e-05] maxgn 9e-10 minlmin 8.2e-05
+fmnist_wd0.0001_s6_p7__sgd nobar n 0 share_bar 1.0 d_quench [] d_polish [] dL [] maxgn 0e+00 minlmin 0.0e+00
+fmnist_wd0.0001_s6_p7__sgd bar n 6 share_bar 1.0 d_quench [1.102 1.428 1.102 1.102 1.428 1.319] d_polish [1.1027 1.4283 1.1027 1.1027 1.4283 1.4283] dL [-4.00e-06 -2.21e-04 -4.00e-06 -4.00e-06 -2.21e-04 -2.21e-04] maxgn 7e-10 minlmin 1.0e-04

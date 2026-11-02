@@ -1,0 +1,38 @@
+/data/summereunann/neurico-workspaces/sgd_escape_time_distributions_20261030_140000_math01/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+w13 t0 skip k0=1
+w13 t1 skip k0=12
+w13 t2 skip k0=15
+w13 t3 no-conv k0=3 gn=4.4e-03 it=249 90s
+w13 t4 no-conv k0=3 gn=6.1e-03 it=129 47s
+w13 t5 no-conv k0=3 gn=1.0e-04 it=71 25s
+w13 t6 skip k0=1
+w13 t7 skip k0=1
+w13 t8 no-conv k0=3 gn=2.2e-03 it=249 80s
+w13 t9 no-conv k0=2 gn=2.5e-03 it=249 79s
+w13 t10 no-conv k0=5 gn=3.3e-03 it=249 79s
+w13 t11 skip k0=1
+w13 t12 skip k0=1
+w13 t13 no-conv k0=4 gn=1.9e-02 it=249 84s
+w13 t14 L=0.7085 index=2 ev=[-0.0016 -0.0005  0.0001  0.0001] gn=1.7e-13 it=113 36s
+w13 t15 skip k0=1
+w13 t16 skip k0=1
+w13 t17 no-conv k0=2 gn=1.5e-03 it=249 63s
+w13 t18 no-conv k0=5 gn=3.4e-02 it=249 54s
+w13 t19 no-conv k0=4 gn=1.5e-02 it=249 62s
+w13 t20 skip k0=1
+w13 t21 no-conv k0=4 gn=1.3e-02 it=249 66s
+w13 t22 no-conv k0=2 gn=5.0e-03 it=249 69s
+w13 t23 skip k0=1
+w13 t24 no-conv k0=5 gn=1.5e-02 it=249 69s
+w13 t25 skip k0=1
+w13 t26 no-conv k0=2 gn=1.6e-02 it=249 66s
+w13 t27 skip k0=1
+w13 t28 skip k0=1
+w13 t29 no-conv k0=5 gn=1.2e-02 it=249 62s
+w13 t30 no-conv k0=2 gn=1.6e-03 it=249 69s
+w13 t31 no-conv k0=3 gn=7.1e-03 it=132 41s
+w13 t32 no-conv k0=3 gn=4.0e-03 it=150 47s
+w13 t33 no-conv k0=4 gn=1.2e-02 it=249 80s
+w13 t34 no-conv k0=4 gn=8.9e-03 it=249 78s
+w13 t35 no-conv k0=3 gn=1.5e-02 it=249 59s

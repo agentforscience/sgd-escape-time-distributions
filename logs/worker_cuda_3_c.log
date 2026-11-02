@@ -1,0 +1,27 @@
+done E1__digits_wd0.001_s0_p3__sgd_lr0.1_B16 alive=256/256 wall=1176s
+done E1__digits_wd0.001_s3_p0__sgd_lr0.2_B16 alive=2/128 wall=798s
+done E3__fmnist_wd0.0001_s0_p6__sgd_lr0.1_B8 alive=0/128 wall=729s
+23:02:26 rc=143 remaining=120
+done E1__fmnist_wd0.0001_s3_p7__sgd_lr0.1_B16 alive=1/256 wall=746s
+done E3__fmnist_wd0.0001_s1_p0__sgd_lr0.1_B64 alive=118/128 wall=641s
+done E3__fmnist_wd0.0001_s1_p1__sgd_lr0.1_B64 alive=0/128 wall=2297s
+done E2__fmnist_wd0.0001_s2_p3__adam_lr0.008_B16 alive=0/128 wall=953s
+done E2__fmnist_wd0.0001_s3_p6__adam_lr0.004_B16 alive=0/128 wall=752s
+done ROB__fmnist_wd0.0001_s0_p6__sgd_lr0.1_B16_qmult3 alive=101/128 wall=2852s
+done ABL__fmnist_wd0.0001_s1_p1__adam_lr0.008_B16_warm1 alive=0/128 wall=1175s
+01:40:01 rc=0 remaining=8
+01:40:34 rc=0 remaining=6
+01:41:08 rc=0 remaining=5
+01:41:41 rc=0 remaining=5
+01:42:14 rc=0 remaining=5
+01:42:47 rc=0 remaining=3
+01:43:21 rc=0 remaining=3
+01:43:54 rc=0 remaining=3
+01:44:27 rc=0 remaining=3
+01:45:00 rc=0 remaining=2
+01:45:34 rc=0 remaining=1
+01:46:07 rc=0 remaining=1
+01:46:40 rc=0 remaining=1
+01:47:13 rc=0 remaining=1
+01:47:46 rc=0 remaining=1
+01:48:20 rc=0 remaining=1

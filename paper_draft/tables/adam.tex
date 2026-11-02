@@ -1,0 +1,24 @@
+\begin{table}[t]
+    \centering
+    \caption{Adam against SGD on \fmnist. \emph{Top:} $\tau_{\text{SGD}}/\tau_{\text{Adam}}$ at matched in-basin loss. The last column keeps only minima where all medians are observed; capped medians make the others bounds. \emph{Bottom:} ablations on 6 minima, as $\tau/\tau_{\text{SGD}}$ at $\eta=0.1$. One of the 6 has a capped SGD median, so the second column drops it. Main estimates in \textbf{bold}.}
+    \label{tab:adam}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{@{}lccc@{}}
+        \toprule
+        \textbf{Group} & \textbf{Ratio, all minima} & \textbf{95\% CI} & \textbf{Observed only} \\
+        \midrule
+        Narrow (top third by $\lmax$, $n=4$) & \textbf{2.75} & 1.89--5.18 & 2.01 ($n=3$) \\
+        Wide (bottom third, $n=4$) & \textbf{1.89} & 1.24--3.22 & 1.91 ($n=3$) \\
+        Narrow/wide ratio & 1.46 & 0.74--3.09 & -- \\
+        All minima ($n=12$) & 2.42 & 1.83--3.27 & 1.97 [1.56, 2.53] ($n=8$) \\
+        \midrule
+        \textbf{Ablation} & $\boldsymbol{\tau/\tau_{\text{SGD}}}$ \textbf{(6 minima)} & \textbf{95\% CI} & \textbf{Observed only} \\
+        \midrule
+        \rmsprop, lr 0.008, no momentum & 0.41 & 0.25--0.63 & 0.50 ($n=5$) \\
+        Adam warm-started, lr 0.008 & 0.35 & 0.22--0.53 & 0.41 ($n=5$) \\
+        \sgdm, same effective $\eta$ & 1.00 & same median check & 1.00 ($n=5$) \\
+        Adam default lr 0.001 (5 minima) & No exits & -- & $\ge$ 7--34$\times$ slower ($n=4$) \\
+        \bottomrule
+    \end{tabular}
+    }
+\end{table}

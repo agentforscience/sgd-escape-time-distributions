@@ -1,0 +1,16 @@
+minibatch ms 6.441712379455566
+full ms 1.6528964042663574
+_s5_p4 lmax 0.81 lr 0.1 step 1000 frac bar>1e-3 by q(30,60,150,400,none): [0.0, 0.0, 0.0, 0.0, 0.0] agree60v400 1.0 dL 0.0305 4 s
+_s5_p4 lmax 0.81 lr 0.1 step 5000 frac bar>1e-3 by q(30,60,150,400,none): [0.0, 0.0, 0.0, 0.0, 0.0] agree60v400 1.0 dL 0.0272 15 s
+_s5_p4 lmax 0.81 lr 0.1 step 10000 frac bar>1e-3 by q(30,60,150,400,none): [0.0, 0.0, 0.0, 0.0, 0.0] agree60v400 1.0 dL 0.0243 25 s
+_s5_p4 lmax 0.81 lr 0.1 step 20000 frac bar>1e-3 by q(30,60,150,400,none): [0.0, 0.0, 0.0, 0.0, 0.0] agree60v400 1.0 dL 0.0242 44 s
+_s5_p4 lmax 0.81 lr 0.1 step 40000 frac bar>1e-3 by q(30,60,150,400,none): [0.0, 0.0, 0.0, 0.0, 0.0] agree60v400 1.0 dL 0.0235 80 s
+_s5_p4 lmax 0.81 lr 0.2 step 1000 frac bar>1e-3 by q(30,60,150,400,none): [0.0, 0.0, 0.0, 0.0, 0.0] agree60v400 1.0 dL 0.0677 5 s
+_s5_p4 lmax 0.81 lr 0.2 step 5000 frac bar>1e-3 by q(30,60,150,400,none): [0.0, 0.0, 0.0, 0.0, 0.0] agree60v400 1.0 dL 0.0502 15 s
+_s5_p4 lmax 0.81 lr 0.2 step 10000 frac bar>1e-3 by q(30,60,150,400,none): [0.0, 0.0, 0.01, 0.05, 0.0] agree60v400 0.953 dL 0.0467 26 s
+_s5_p4 lmax 0.81 lr 0.2 step 20000 frac bar>1e-3 by q(30,60,150,400,none): [0.0, 0.03, 0.14, 0.34, 0.0] agree60v400 0.688 dL 0.0449 48 s
+_s5_p4 lmax 0.81 lr 0.2 step 40000 frac bar>1e-3 by q(30,60,150,400,none): [0.24, 0.56, 0.78, 0.88, 0.0] agree60v400 0.688 dL 0.0427 84 s
+_s6_p2 lmax 2.33 lr 0.1 step 1000 frac bar>1e-3 by q(30,60,150,400,none): [0.0, 0.0, 0.0, 0.0, 0.0] agree60v400 1.0 dL 0.0503 7 s
+_s6_p2 lmax 2.33 lr 0.1 step 5000 frac bar>1e-3 by q(30,60,150,400,none): [0.0, 0.0, 0.0, 0.0, 0.0] agree60v400 1.0 dL 0.0354 19 s
+_s6_p2 lmax 2.33 lr 0.1 step 10000 frac bar>1e-3 by q(30,60,150,400,none): [0.0, 0.01, 0.02, 0.21, 0.0] agree60v400 0.797 dL 0.0309 32 s
+_s6_p2 lmax 2.33 lr 0.1 step 20000 frac bar>1e-3 by q(30,60,150,400,none): [0.35, 0.43, 0.44, 0.51, 0.0] agree60v400 0.906 dL 0.0277 57 s

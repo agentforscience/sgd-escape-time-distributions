@@ -1,0 +1,18 @@
+/data/summereunann/neurico-workspaces/sgd_escape_time_distributions_20261030_140000_math01/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+{'name': 'digits_wd0.01_s0_p0', 'L': 0.4702, 'acc': 0.9872, 'lmax': 0.7891, 'trace': 33.8296, 'norm': 7.4832}
+{'name': 'digits_wd0.01_s0_p1', 'L': 0.4716, 'acc': 0.9861, 'lmax': 0.7245, 'trace': 34.9451, 'norm': 7.5034}
+{'name': 'digits_wd0.01_s0_p2', 'L': 0.4674, 'acc': 0.9866, 'lmax': 0.8185, 'trace': 33.9181, 'norm': 7.4884}
+{'name': 'digits_wd0.01_s0_p3', 'L': 0.4618, 'acc': 0.9872, 'lmax': 0.6967, 'trace': 33.4896, 'norm': 7.4565}
+{'name': 'digits_wd0.01_s0_p4', 'L': 0.4644, 'acc': 0.9894, 'lmax': 0.7071, 'trace': 33.5377, 'norm': 7.4827}
+{'name': 'digits_wd0.01_s0_p5', 'L': 0.4724, 'acc': 0.9878, 'lmax': 0.8591, 'trace': 33.9027, 'norm': 7.5381}
+{'name': 'digits_wd0.01_s0_p6', 'L': 0.4672, 'acc': 0.9872, 'lmax': 0.7524, 'trace': 32.9482, 'norm': 7.4844}
+{'name': 'digits_wd0.01_s0_p7', 'L': 0.47, 'acc': 0.985, 'lmax': 0.7799, 'trace': 33.6332, 'norm': 7.478}
+{'name': 'digits_wd0.01_s1_p0', 'L': 0.4678, 'acc': 0.9839, 'lmax': 0.7555, 'trace': 33.8007, 'norm': 7.4657}
+{'name': 'digits_wd0.01_s1_p1', 'L': 0.4621, 'acc': 0.9855, 'lmax': 0.7866, 'trace': 34.1474, 'norm': 7.4428}
+{'name': 'digits_wd0.01_s1_p2', 'L': 0.4637, 'acc': 0.9861, 'lmax': 0.7677, 'trace': 34.0847, 'norm': 7.4827}
+{'name': 'digits_wd0.01_s1_p3', 'L': 0.4666, 'acc': 0.9839, 'lmax': 0.8081, 'trace': 34.5333, 'norm': 7.4703}
+{'name': 'digits_wd0.01_s1_p4', 'L': 0.4716, 'acc': 0.985, 'lmax': 0.7828, 'trace': 35.3446, 'norm': 7.5174}
+{'name': 'digits_wd0.01_s1_p5', 'L': 0.4727, 'acc': 0.9872, 'lmax': 0.8512, 'trace': 35.417, 'norm': 7.5317}
+{'name': 'digits_wd0.01_s1_p6', 'L': 0.4676, 'acc': 0.9878, 'lmax': 0.8155, 'trace': 34.6044, 'norm': 7.4764}
+{'name': 'digits_wd0.01_s1_p7', 'L': 0.4662, 'acc': 0.985, 'lmax': 0.7113, 'trace': 32.5101, 'norm': 7.4691}

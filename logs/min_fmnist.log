@@ -1,0 +1,34 @@
+/data/summereunann/neurico-workspaces/sgd_escape_time_distributions_20261030_140000_math01/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+{'name': 'fmnist_s0_p0', 'L': 0.4966, 'acc': 0.854, 'lmax': 0.7961, 'trace': 21.2981, 'norm': 13.6051}
+{'name': 'fmnist_s0_p1', 'L': 0.487, 'acc': 0.866, 'lmax': 0.7174, 'trace': 20.7725, 'norm': 13.5481}
+{'name': 'fmnist_s0_p2', 'L': 0.4838, 'acc': 0.863, 'lmax': 0.8396, 'trace': 21.7267, 'norm': 13.8123}
+{'name': 'fmnist_s0_p3', 'L': 0.4997, 'acc': 0.848, 'lmax': 0.8462, 'trace': 22.614, 'norm': 13.3215}
+{'name': 'fmnist_s0_p4', 'L': 0.4903, 'acc': 0.858, 'lmax': 0.6062, 'trace': 20.6139, 'norm': 13.4375}
+{'name': 'fmnist_s0_p5', 'L': 0.5028, 'acc': 0.862, 'lmax': 1.0013, 'trace': 23.3736, 'norm': 13.7359}
+{'name': 'fmnist_s0_p6', 'L': 0.4976, 'acc': 0.8585, 'lmax': 0.8436, 'trace': 21.503, 'norm': 13.9083}
+{'name': 'fmnist_s0_p7', 'L': 0.5014, 'acc': 0.8555, 'lmax': 0.7597, 'trace': 22.9886, 'norm': 13.7158}
+{'name': 'fmnist_s1_p0', 'L': 0.4893, 'acc': 0.8675, 'lmax': 0.8241, 'trace': 23.8999, 'norm': 13.7639}
+{'name': 'fmnist_s1_p1', 'L': 0.4921, 'acc': 0.8505, 'lmax': 0.8668, 'trace': 22.8748, 'norm': 13.3126}
+{'name': 'fmnist_s1_p2', 'L': 0.5012, 'acc': 0.857, 'lmax': 0.9958, 'trace': 23.5139, 'norm': 13.5391}
+{'name': 'fmnist_s1_p3', 'L': 0.4897, 'acc': 0.851, 'lmax': 0.7841, 'trace': 22.5416, 'norm': 13.4127}
+{'name': 'fmnist_s1_p4', 'L': 0.5009, 'acc': 0.8555, 'lmax': 0.7759, 'trace': 21.4799, 'norm': 13.1773}
+{'name': 'fmnist_s1_p5', 'L': 0.4954, 'acc': 0.859, 'lmax': 0.8853, 'trace': 21.788, 'norm': 13.4572}
+{'name': 'fmnist_s1_p6', 'L': 0.5042, 'acc': 0.8585, 'lmax': 0.7191, 'trace': 21.3494, 'norm': 14.0603}
+{'name': 'fmnist_s1_p7', 'L': 0.4939, 'acc': 0.859, 'lmax': 0.9565, 'trace': 23.1392, 'norm': 13.6422}
+{'name': 'fmnist_s2_p0', 'L': 0.4867, 'acc': 0.863, 'lmax': 0.9093, 'trace': 24.8048, 'norm': 13.6818}
+{'name': 'fmnist_s2_p1', 'L': 0.5043, 'acc': 0.857, 'lmax': 0.7495, 'trace': 23.1013, 'norm': 13.5881}
+{'name': 'fmnist_s2_p2', 'L': 0.5011, 'acc': 0.852, 'lmax': 0.7113, 'trace': 21.3083, 'norm': 13.5125}
+{'name': 'fmnist_s2_p3', 'L': 0.4963, 'acc': 0.852, 'lmax': 0.8509, 'trace': 21.7504, 'norm': 13.571}
+{'name': 'fmnist_s2_p4', 'L': 0.4982, 'acc': 0.8645, 'lmax': 0.6718, 'trace': 20.023, 'norm': 13.4808}
+{'name': 'fmnist_s2_p5', 'L': 0.4955, 'acc': 0.8515, 'lmax': 0.9363, 'trace': 22.2919, 'norm': 13.4662}
+{'name': 'fmnist_s2_p6', 'L': 0.4924, 'acc': 0.864, 'lmax': 1.1211, 'trace': 24.4711, 'norm': 13.8846}
+{'name': 'fmnist_s2_p7', 'L': 0.5008, 'acc': 0.8585, 'lmax': 0.7255, 'trace': 22.0859, 'norm': 13.7925}
+{'name': 'fmnist_s3_p0', 'L': 0.5029, 'acc': 0.8555, 'lmax': 1.0548, 'trace': 24.3571, 'norm': 13.4799}
+{'name': 'fmnist_s3_p1', 'L': 0.4894, 'acc': 0.859, 'lmax': 0.7784, 'trace': 22.3937, 'norm': 13.8514}
+{'name': 'fmnist_s3_p2', 'L': 0.4965, 'acc': 0.857, 'lmax': 0.7922, 'trace': 24.8854, 'norm': 13.7418}
+{'name': 'fmnist_s3_p3', 'L': 0.499, 'acc': 0.854, 'lmax': 0.8051, 'trace': 23.2628, 'norm': 13.6728}
+{'name': 'fmnist_s3_p4', 'L': 0.488, 'acc': 0.8585, 'lmax': 1.0778, 'trace': 25.6936, 'norm': 13.7204}
+{'name': 'fmnist_s3_p5', 'L': 0.4992, 'acc': 0.853, 'lmax': 0.8029, 'trace': 21.6518, 'norm': 13.7915}
+{'name': 'fmnist_s3_p6', 'L': 0.5002, 'acc': 0.857, 'lmax': 0.745, 'trace': 19.9906, 'norm': 13.3201}
+{'name': 'fmnist_s3_p7', 'L': 0.4862, 'acc': 0.859, 'lmax': 1.0172, 'trace': 24.1687, 'norm': 13.7181}

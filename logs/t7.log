@@ -1,0 +1,10 @@
+_s6_p4 l=0.79 step 300 out=0.02 | q500: in max 0.192 out min 1.290 | q1500: in max 0.025 out min 3.181 | q3000: in max 0.002 out min 4.048 | q5000: in max 0.000 out min 4.190
+_s6_p4 l=0.79 step 600 out=0.16 | q500: in max 0.261 out min 0.802 | q1500: in max 0.033 out min 2.572 | q3000: in max 0.003 out min 3.944 | q5000: in max 0.000 out min 4.186
+_s6_p4 l=0.79 step 1000 out=0.44 | q500: in max 0.270 out min 1.127 | q1500: in max 0.037 out min 2.996 | q3000: in max 0.004 out min 4.002 | q5000: in max 0.000 out min 4.188
+_s6_p4 l=0.79 step 1500 out=0.78 | q500: in max 0.321 out min 0.833 | q1500: in max 0.038 out min 2.548 | q3000: in max 0.004 out min 3.942 | q5000: in max 0.000 out min 4.186
+_s6_p4 l=0.79 step 2500 out=0.85 | q500: in max 0.427 out min 1.367 | q1500: in max 0.048 out min 3.107 | q3000: in max 0.005 out min 4.030 | q5000: in max 0.000 out min 4.189
+_s1_p2 l=2.73 step 300 out=0.00 | q500: in max 0.481 out min 9.000 | q1500: in max 0.169 out min 9.000 | q3000: in max 0.066 out min 9.000 | q5000: in max 0.027 out min 9.000
+_s1_p2 l=2.73 step 600 out=0.00 | q500: in max 0.676 out min 9.000 | q1500: in max 0.212 out min 9.000 | q3000: in max 0.082 out min 9.000 | q5000: in max 0.034 out min 9.000
+_s1_p2 l=2.73 step 1000 out=0.00 | q500: in max 1.001 out min 9.000 | q1500: in max 0.335 out min 9.000 | q3000: in max 0.123 out min 9.000 | q5000: in max 0.049 out min 9.000
+_s1_p2 l=2.73 step 1500 out=0.04 | q500: in max 1.920 out min 1.646 | q1500: in max 0.759 out min 1.634 | q3000: in max 0.165 out min 1.900 | q5000: in max 0.058 out min 2.291
+_s1_p2 l=2.73 step 2500 out=0.20 | q500: in max 2.499 out min 1.727 | q1500: in max 2.005 out min 0.900 | q3000: in max 1.198 out min 0.932 | q5000: in max 0.210 out min 1.006

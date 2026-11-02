@@ -1,0 +1,27 @@
+device cuda:3
+digits (1797, 64) P 610
+/data/summereunann/neurico-workspaces/sgd_escape_time_distributions_20261030_140000_math01/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+seed0 L=0.10846 acc=0.999 gn=4.8e-12 lmin=2.98e-04 lmax=0.398 tr=12.81 t=11.3s
+seed1 L=0.10668 acc=0.999 gn=1.4e-10 lmin=2.25e-04 lmax=0.417 tr=13.10 t=7.7s
+seed2 L=0.11049 acc=0.999 gn=1.9e-11 lmin=6.71e-05 lmax=0.568 tr=14.05 t=8.3s
+lr=0.05 B=16 step=100 dL=0.0008 dist=0.111 qL-L*=0.00000 qdist=0.002 barrier>1e-3:0.00 t=1s
+lr=0.05 B=16 step=1000 dL=0.0012 dist=0.180 qL-L*=0.00000 qdist=0.006 barrier>1e-3:0.00 t=3s
+lr=0.05 B=16 step=5000 dL=0.0012 dist=0.213 qL-L*=0.00000 qdist=0.014 barrier>1e-3:0.00 t=12s
+lr=0.05 B=16 step=20000 dL=0.0012 dist=0.236 qL-L*=0.00000 qdist=0.030 barrier>1e-3:0.00 t=40s
+lr=0.05 B=16 step=60000 dL=0.0012 dist=0.254 qL-L*=0.00000 qdist=0.058 barrier>1e-3:0.00 t=110s
+lr=0.2 B=16 step=100 dL=0.0111 dist=0.494 qL-L*=0.00000 qdist=0.023 barrier>1e-3:0.00 t=0s
+lr=0.2 B=16 step=1000 dL=0.0139 dist=1.323 qL-L*=0.00012 qdist=0.396 barrier>1e-3:0.00 t=3s
+lr=0.2 B=16 step=5000 dL=0.0096 dist=1.279 qL-L*=0.00004 qdist=0.562 barrier>1e-3:0.00 t=11s
+lr=0.2 B=16 step=20000 dL=0.0070 dist=2.119 qL-L*=-0.00117 qdist=2.543 barrier>1e-3:0.27 t=36s
+lr=0.2 B=16 step=60000 dL=0.0029 dist=4.698 qL-L*=-0.00386 qdist=5.175 barrier>1e-3:1.00 t=101s
+lr=0.5 B=16 step=100 dL=0.1007 dist=2.770 qL-L*=0.00006 qdist=0.627 barrier>1e-3:0.00 t=0s
+lr=0.5 B=16 step=1000 dL=0.0576 dist=4.254 qL-L*=0.00040 qdist=1.226 barrier>1e-3:0.06 t=2s
+lr=0.5 B=16 step=5000 dL=0.0455 dist=4.143 qL-L*=-0.00004 qdist=2.281 barrier>1e-3:0.44 t=9s
+lr=0.5 B=16 step=20000 dL=0.0395 dist=5.834 qL-L*=-0.00166 qdist=4.944 barrier>1e-3:0.97 t=32s
+lr=0.5 B=16 step=60000 dL=0.0323 dist=7.558 qL-L*=-0.00459 qdist=6.758 barrier>1e-3:1.00 t=96s
+lr=1.0 B=16 step=100 dL=0.2388 dist=7.556 qL-L*=0.00064 qdist=1.710 barrier>1e-3:0.12 t=1s
+lr=1.0 B=16 step=1000 dL=0.1504 dist=8.524 qL-L*=0.00104 qdist=2.849 barrier>1e-3:0.53 t=2s
+lr=1.0 B=16 step=5000 dL=0.1272 dist=9.552 qL-L*=-0.00079 qdist=5.704 barrier>1e-3:0.99 t=9s
+lr=1.0 B=16 step=20000 dL=0.1169 dist=10.547 qL-L*=-0.00274 qdist=7.071 barrier>1e-3:1.00 t=36s
+lr=1.0 B=16 step=60000 dL=0.1123 dist=11.094 qL-L*=-0.00307 qdist=7.706 barrier>1e-3:1.00 t=103s

@@ -1,0 +1,17 @@
+\begin{table}[t]
+    \centering
+    \caption{Batch-size scaling at $\eta=0.1$. The hypothesis predicts slope 0.5 and factor 1.41. Lower AIC is better, and the preferred form is in \textbf{bold}. Fits use uncensored medians only.}
+    \label{tab:batch}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{@{}lll@{}}
+        \toprule
+        \textbf{Measure} & \textbf{\fmnist (6 minima)} & \textbf{\digitsdata (3 minima)} \\
+        \midrule
+        Slope of $\log_2\tau$ on $\log_2 B$ & \textbf{2.02} [1.64, 2.41] & 3.4 (one minimum) \\
+        $\tau$ factor per doubling & \textbf{5.1} [3.4, 8.0] & 18 [10, 41] \\
+        Factor by step: $B=$ 4$\to$8 / 8$\to$16 / 16$\to$32 / 32$\to$64 & 5.9 / 3.8 / 4.2 / 2.4 & 23 / 5.1 / censored / censored \\
+        AIC: power law vs Arrhenius & \textbf{$-$16.7} vs $+$16.1 & \textbf{$-$2.9} vs $+$6.4 \\
+        \bottomrule
+    \end{tabular}
+    }
+\end{table}

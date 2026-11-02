@@ -1,0 +1,135 @@
+\begin{thebibliography}{21}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Alpaydin and Kaynak(1998)]{alpaydin1998optical}
+Ethem Alpaydin and Cenk Kaynak.
+\newblock Optical recognition of handwritten digits.
+\newblock UCI Machine Learning Repository, 1998.
+
+\bibitem[Daneshmand et~al.(2018)Daneshmand, Kohler, Lucchi, and
+  Hofmann]{daneshmand2018escaping}
+Hadi Daneshmand, Jonas Kohler, Aurelien Lucchi, and Thomas Hofmann.
+\newblock Escaping saddles with stochastic gradients.
+\newblock In \emph{International Conference on Machine Learning}, 2018.
+
+\bibitem[Dinh et~al.(2017)Dinh, Pascanu, Bengio, and Bengio]{dinh2017sharp}
+Laurent Dinh, Razvan Pascanu, Samy Bengio, and Yoshua Bengio.
+\newblock Sharp minima can generalize for deep nets.
+\newblock In \emph{International Conference on Machine Learning}, 2017.
+
+\bibitem[Fukumizu and Amari(2000)]{fukumizu2000local}
+Kenji Fukumizu and Shun-ichi Amari.
+\newblock Local minima and plateaus in hierarchical structures of multilayer
+  perceptrons.
+\newblock \emph{Neural Networks}, 13\penalty0 (3):\penalty0 317--327, 2000.
+
+\bibitem[Ibayashi and Imaizumi(2021)]{ibayashi2021exponential}
+Hikaru Ibayashi and Masaaki Imaizumi.
+\newblock Exponential escape efficiency of {SGD} from sharp minima in
+  non-stationary regime.
+\newblock arXiv:2111.04004, 2021.
+
+\bibitem[Jastrz{\k{e}}bski et~al.(2017)Jastrz{\k{e}}bski, Kenton, Arpit,
+  Ballas, Fischer, Bengio, and Storkey]{jastrzebski2018three}
+Stanis{\l}aw Jastrz{\k{e}}bski, Zachary Kenton, Devansh Arpit, Nicolas Ballas,
+  Asja Fischer, Yoshua Bengio, and Amos Storkey.
+\newblock Three factors influencing minima in {SGD}.
+\newblock arXiv:1711.04623, 2017.
+
+\bibitem[Jin et~al.(2017)Jin, Ge, Netrapalli, Kakade, and
+  Jordan]{jin2017escape}
+Chi Jin, Rong Ge, Praneeth Netrapalli, Sham~M. Kakade, and Michael~I. Jordan.
+\newblock How to escape saddle points efficiently.
+\newblock In \emph{International Conference on Machine Learning}, 2017.
+
+\bibitem[Keskar et~al.(2017)Keskar, Mudigere, Nocedal, Smelyanskiy, and
+  Tang]{keskar2017large}
+Nitish~Shirish Keskar, Dheevatsa Mudigere, Jorge Nocedal, Mikhail Smelyanskiy,
+  and Ping Tak~Peter Tang.
+\newblock On large-batch training for deep learning: Generalization gap and
+  sharp minima.
+\newblock In \emph{International Conference on Learning Representations}, 2017.
+
+\bibitem[Kingma and Ba(2015)]{kingma2015adam}
+Diederik~P. Kingma and Jimmy Ba.
+\newblock Adam: A method for stochastic optimization.
+\newblock In \emph{International Conference on Learning Representations}, 2015.
+
+\bibitem[Kramers(1940)]{kramers1940brownian}
+Hendrik~Anthony Kramers.
+\newblock Brownian motion in a field of force and the diffusion model of
+  chemical reactions.
+\newblock \emph{Physica}, 7\penalty0 (4):\penalty0 284--304, 1940.
+
+\bibitem[Mandt et~al.(2017)Mandt, Hoffman, and Blei]{mandt2017stochastic}
+Stephan Mandt, Matthew~D. Hoffman, and David~M. Blei.
+\newblock Stochastic gradient descent as approximate {B}ayesian inference.
+\newblock \emph{Journal of Machine Learning Research}, 18:\penalty0 1--35,
+  2017.
+
+\bibitem[Mori et~al.(2022)Mori, Ziyin, Liu, and Ueda]{mori2022powerlaw}
+Takashi Mori, Liu Ziyin, Kangqiao Liu, and Masahito Ueda.
+\newblock Power-law escape rate of {SGD}.
+\newblock In \emph{International Conference on Machine Learning}, 2022.
+
+\bibitem[{\c{S}}im{\c{s}}ek et~al.(2021){\c{S}}im{\c{s}}ek, Ged, Jacot,
+  Spadaro, Hongler, Gerstner, and Brea]{simsek2021geometry}
+Berfin {\c{S}}im{\c{s}}ek, Fran{\c{c}}ois Ged, Arthur Jacot, Francesco Spadaro,
+  Cl{\'e}ment Hongler, Wulfram Gerstner, and Johanni Brea.
+\newblock Geometry of the loss landscape in overparameterized neural networks:
+  Symmetries and invariances.
+\newblock In \emph{International Conference on Machine Learning}, 2021.
+
+\bibitem[{\c{S}}im{\c{s}}ekli et~al.(2019){\c{S}}im{\c{s}}ekli, Sagun, and
+  G{\"u}rb{\"u}zbalaban]{simsekli2019tail}
+Umut {\c{S}}im{\c{s}}ekli, Levent Sagun, and Mert G{\"u}rb{\"u}zbalaban.
+\newblock A tail-index analysis of stochastic gradient noise in deep neural
+  networks.
+\newblock In \emph{International Conference on Machine Learning}, 2019.
+
+\bibitem[Smith and Le(2018)]{smith2018bayesian}
+Samuel~L. Smith and Quoc~V. Le.
+\newblock A {B}ayesian perspective on generalization and stochastic gradient
+  descent.
+\newblock In \emph{International Conference on Learning Representations}, 2018.
+
+\bibitem[Xiao et~al.(2017)Xiao, Rasul, and Vollgraf]{xiao2017fashion}
+Han Xiao, Kashif Rasul, and Roland Vollgraf.
+\newblock Fashion-{MNIST}: a novel image dataset for benchmarking machine
+  learning algorithms.
+\newblock arXiv:1708.07747, 2017.
+
+\bibitem[Xie et~al.(2021)Xie, Sato, and Sugiyama]{xie2021diffusion}
+Zeke Xie, Issei Sato, and Masashi Sugiyama.
+\newblock A diffusion theory for deep learning dynamics: Stochastic gradient
+  descent exponentially favors flat minima.
+\newblock In \emph{International Conference on Learning Representations}, 2021.
+
+\bibitem[Xie et~al.(2022)Xie, Wang, Zhang, Sato, and Sugiyama]{xie2022adaptive}
+Zeke Xie, Xinrui Wang, Huishuai Zhang, Issei Sato, and Masashi Sugiyama.
+\newblock Adaptive inertia: Disentangling the effects of adaptive learning rate
+  and momentum.
+\newblock In \emph{International Conference on Machine Learning}, 2022.
+
+\bibitem[Yaida(2019)]{yaida2019fluctuation}
+Sho Yaida.
+\newblock Fluctuation-dissipation relations for stochastic gradient descent.
+\newblock In \emph{International Conference on Learning Representations}, 2019.
+
+\bibitem[Zhou et~al.(2020)Zhou, Feng, Ma, Xiong, Hoi, and E]{zhou2020towards}
+Pan Zhou, Jiashi Feng, Chao Ma, Caiming Xiong, Steven Hoi, and Weinan E.
+\newblock Towards theoretically understanding why {SGD} generalizes better than
+  {ADAM} in deep learning.
+\newblock In \emph{Advances in Neural Information Processing Systems}, 2020.
+
+\bibitem[Zhu et~al.(2019)Zhu, Wu, Yu, Wu, and Ma]{zhu2019anisotropic}
+Zhanxing Zhu, Jingfeng Wu, Bing Yu, Lei Wu, and Jinwen Ma.
+\newblock The anisotropic noise in stochastic gradient descent: Its behavior of
+  escaping from sharp minima and regularization effects.
+\newblock In \emph{International Conference on Machine Learning}, 2019.
+
+\end{thebibliography}

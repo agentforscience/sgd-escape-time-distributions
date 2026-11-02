@@ -1,0 +1,41 @@
+\section{Discussion}
+\label{sec:discussion}
+
+\para{{\bf Does the SDE picture hold?}}
+In its scaling, largely yes: on \fmnist, $\tau\eta$ depends on $\etaB$ to within about 10\%.
+In its usual exponential detail, not cleanly.
+A short-time delay, many exit channels and strong differences between minima dominate at these noise levels, while E0 shows that the instrument recovers Kramers when the theory's conditions hold.
+Sharpness, a common stand-in for escape difficulty, did not predict escape time here ($\rho=0.08$ at $\eta=0.1$ on \fmnist).
+
+\para{Alternative explanations.}
+{\em $k>1$ as a measurement artefact.}
+The converged quench and the Newton audit argue against it, and so does a robustness check: tripling quench length at 4 minima gives median ratios 1.00, 1.00, 1.10 and 0.64, and changes $k$ by at most 0.16.
+The 0.64 is the sharpest minimum, where $\tau=550$ spans only a few checks.
+{\em Delay as in-well relaxation.}
+This is consistent with the data, since excess loss relaxes over 1,000 or more steps, but we did not show it separately.
+E0 gives a smaller delay effect, with excess $k$ of at most 0.2, so network delays are larger, possibly because of slow soft modes.
+{\em Adam's speed-up as calibration.}
+Matching excess loss is one reasonable choice, and the speed-up could partly reflect Adam's different stationary distribution.
+The reversal at the default learning rate shows how much calibration matters.
+
+\para{Relation to prior work.}
+Our temperature scaling agrees with \citet{smith2018bayesian} and \citet{jastrzebski2018three}.
+Steep dependence on $B$ agrees qualitatively with \citet{xie2021diffusion} and \citet{mori2022powerlaw}, though the exp-linear form fits worse in our range.
+The claim of \citet{zhou2020towards} that SGD escapes faster holds at Adam's default learning rate and reverses at matched loss, so the two views may differ mostly in calibration.
+The finding of \citet{xie2022adaptive} that momentum matters little for escaping sharp minima fits our \sgdm ablation.
+
+\para{Practical implications.}
+Use $\etaB$ as the control variable and expect a steep response: batch size has far more leverage on trapping than a $\sqrt{B}$ law suggests.
+Do not read Adam-versus-SGD escape claims without the learning-rate calibration.
+A single mean escape time also hides the delay and the spread between minima, so reports should give the distribution with censoring.
+
+\para{Limitations.}
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+    \item {\em Scale.} We use tiny MLPs (115--610 parameters), small data and exact Hessians, and we show nothing for deep networks. Saddle results come from a different, smaller network than the minima results.
+    \item {\em Minima sample.} We use 12 + 6 minima. Narrow versus wide comparisons have $n=4$ per group and low power, and \digitsdata has a small sharpness range.
+    \item {\em Censoring.} The 150,000-step cap hides the slowest behaviour. It removes 8 of 36 E1 conditions from H1, turns many large-$B$ medians into bounds, limits the Arrhenius test, and makes the \digitsdata $\etaB$ test inconclusive.
+    \item {\em Time resolution.} The check grid limits resolution below about 200 steps. Checks observe membership, so an exit and return between checks is missed.
+    \item {\em Definition.} Results describe first exit from a strict gradient-flow basin, and a coarser ``valley'' definition would give different times. Residual false exits are about 1.6\%.
+    \item {\em Conditions.} An exact-replica start at $\tstar$ builds in a transient. Two $\eta=0.2$ runs at the sharpest minimum had $\eta\lmax>1$, where instability, not noise, may drive exit.
+    \item {\em Saddle sample.} Saddles come from descent trajectories with a low-index filter, mostly index 2, and they have weak curvature ($|\lambda_1|$ from $2\times10^{-4}$ to 0.03).
+\end{itemize}

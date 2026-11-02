@@ -1,0 +1,7 @@
+[0.62, 0.64, 0.7, 0.75, 0.76, 0.78, 0.83, 0.83, 0.86, 0.87, 0.88, 0.89, 0.95, 1.02, 1.02, 1.03, 1.03, 1.07, 1.19, 1.27, 1.27, 1.29, 1.29, 1.33, 1.44, 1.6, 1.9, 2.17, 2.18, 2.73, 5.48]
+fmnist_wd0.0001_s1_p0 cpu 0.1 16 wall 590.2 alive 64 of 64 lastloss [0.0208213  0.01970489 0.01677662] bar>1e-3 frac 0.0 dist [0.7322036 2.5817323]
+fmnist_wd0.0001_s1_p0 cpu 0.2 16 wall 716.7 alive 50 of 64 lastloss [0.05433309 0.04102692 0.03331045] bar>1e-3 frac 0.96875 dist [1.5494727 5.601201 ]
+fmnist_wd0.0001_s1_p1 cpu 0.1 16 wall 5420.7 alive 53 of 64 lastloss [0.06270421 0.0393275  0.02621332] bar>1e-3 frac 0.734375 dist [1.2208369 5.816126 ]
+/data/summereunann/neurico-workspaces/sgd_escape_time_distributions_20261030_140000_math01/src/_bench.py:12: RuntimeWarning: Mean of empty slice
+  print(name,dev,lr,B,'wall',round(r['wall'],1),'alive',r['n_alive'],'of 64','lastloss',np.nanmean(r['loss'],0)[[10,50,-1]],'bar>1e-3 frac',(np.nanmax(r['bar'],1)>1e-3).mean(),'dist',np.nanmean(r['dist'],0)[[10,-1]],flush=True)
+fmnist_wd0.0001_s1_p1 cpu 0.2 16 wall 3071.4 alive 0 of 64 lastloss [0.09078246 0.06180249        nan] bar>1e-3 frac 1.0 dist [3.0841606       nan]

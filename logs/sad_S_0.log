@@ -1,0 +1,63 @@
+/data/summereunann/neurico-workspaces/sgd_escape_time_distributions_20261030_140000_math01/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+w0 t0 no-conv k0=4 gn=2.2e-02 it=249 63s
+w0 t1 no-conv k0=3 gn=2.5e-02 it=249 61s
+w0 t2 skip k0=0
+w0 t3 no-conv k0=3 gn=5.8e-03 it=249 59s
+w0 t4 no-conv k0=3 gn=6.4e-07 it=43 12s
+w0 t5 no-conv k0=3 gn=4.3e-05 it=19 5s
+w0 t6 no-conv k0=4 gn=1.4e-02 it=249 62s
+w0 t7 skip k0=1
+w0 t8 skip k0=1
+w0 t9 no-conv k0=4 gn=7.6e-03 it=249 63s
+w0 t10 skip k0=1
+w0 t11 no-conv k0=6 gn=8.9e-03 it=87 18s
+w0 t12 skip k0=1
+w0 t13 no-conv k0=2 gn=8.8e-03 it=249 54s
+w0 t14 skip k0=0
+w0 t15 skip k0=0
+w0 t16 L=0.7552 index=2 ev=[-0.0003 -0.0001  0.0001  0.0001] gn=6.6e-11 it=121 34s
+w0 t17 no-conv k0=4 gn=6.9e-03 it=249 58s
+w0 t18 skip k0=0
+w0 t19 no-conv k0=4 gn=8.7e-04 it=109 33s
+w0 t20 no-conv k0=2 gn=1.3e-03 it=249 71s
+w0 t21 L=0.7016 index=2 ev=[-0.0007 -0.0002  0.0001  0.0001] gn=4.7e-16 it=145 41s
+w0 t22 skip k0=0
+w0 t23 no-conv k0=5 gn=1.5e-02 it=249 84s
+w0 t24 skip k0=1
+w0 t25 no-conv k0=3 gn=1.2e-02 it=249 76s
+w0 t26 no-conv k0=2 gn=7.2e-03 it=22 7s
+w0 t27 no-conv k0=3 gn=2.3e-03 it=249 80s
+w0 t28 no-conv k0=3 gn=2.6e-03 it=249 77s
+w0 t29 skip k0=1
+w0 t30 no-conv k0=3 gn=1.1e-03 it=249 83s
+w0 t31 skip k0=0
+w0 t32 no-conv k0=2 gn=4.3e-03 it=249 75s
+w0 t33 L=0.7554 index=2 ev=[-0.0046 -0.0007  0.0001  0.0001] gn=1.3e-14 it=127 35s
+w0 t34 no-conv k0=2 gn=7.0e-03 it=249 79s
+w0 t35 no-conv k0=5 gn=8.4e-03 it=249 80s
+w0 t36 skip k0=0
+w0 t37 no-conv k0=2 gn=6.7e-03 it=249 74s
+w0 t38 no-conv k0=2 gn=2.8e-03 it=249 95s
+w0 t39 no-conv k0=8 gn=1.2e-02 it=97 33s
+w0 t40 no-conv k0=3 gn=8.3e-03 it=249 105s
+w0 t41 no-conv k0=4 gn=5.0e-03 it=47 19s
+w0 t42 no-conv k0=3 gn=9.4e-03 it=249 101s
+w0 t43 skip k0=1
+w0 t44 no-conv k0=3 gn=7.4e-03 it=249 86s
+w0 t45 skip k0=1
+w0 t46 skip k0=0
+w0 t47 no-conv k0=3 gn=2.2e-02 it=249 92s
+w0 t48 no-conv k0=3 gn=2.1e-04 it=249 91s
+w0 t49 skip k0=0
+w0 t50 no-conv k0=2 gn=8.0e-03 it=249 83s
+w0 t51 skip k0=0
+w0 t52 no-conv k0=3 gn=6.2e-04 it=249 88s
+w0 t53 no-conv k0=2 gn=5.0e-03 it=249 87s
+w0 t54 no-conv k0=2 gn=1.6e-03 it=249 103s
+w0 t55 skip k0=1
+w0 t56 skip k0=1
+w0 t57 no-conv k0=3 gn=7.9e-03 it=249 126s
+w0 t58 no-conv k0=4 gn=6.3e-03 it=249 120s
+w0 t59 no-conv k0=3 gn=7.9e-03 it=249 132s
+w0 t60 no-conv k0=2 gn=8.4e-03 it=249 121s

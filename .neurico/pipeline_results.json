@@ -1,0 +1,18 @@
+{
+  "success": true,
+  "stages": {
+    "resource_finder": {
+      "success": true,
+      "skipped": true
+    },
+    "experiment_runner": {
+      "success": true,
+      "return_code": 0,
+      "elapsed_time": 17733.814127206802,
+      "log_file": "/data/summereunann/neurico-workspaces/sgd_escape_time_distributions_20261030_140000_math01/logs/execution_claude.log",
+      "transcript_file": "/data/summereunann/neurico-workspaces/sgd_escape_time_distributions_20261030_140000_math01/logs/execution_claude_transcript.jsonl",
+      "background_processes_terminated": false
+    }
+  },
+  "work_dir": "/data/summereunann/neurico-workspaces/sgd_escape_time_distributions_20261030_140000_math01"
+}

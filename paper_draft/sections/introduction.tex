@@ -1,0 +1,44 @@
+\section{Introduction}
+\label{sec:intro}
+
+How long does an optimizer stay in a loss basin?
+Arguments for flat-minima bias, implicit regularization and learning-rate schedules all depend on the answer \citep{xie2021diffusion,mori2022powerlaw,smith2018bayesian}.
+Those arguments lean on mean escape-time formulas derived in asymptotic limits.
+
+The mean is not enough.
+The full distribution tells us whether escape is memoryless, which is what the usual stochastic differential equation (SDE) picture assumes.
+In the high-barrier limit, Kramers theory predicts Poisson exits and therefore exponential escape times \citep{kramers1940brownian}.
+Real optimizers run at finite noise, start at a specific point, and move through landscapes with many neighbouring minima.
+None of these conditions guarantees exponential times, and each one bends the distribution in its own way.
+
+Prior work measures mean rates \citep{xie2021diffusion,mori2022powerlaw,ibayashi2021exponential}.
+We found no study of distribution shape with censoring and model comparison in real networks, although keyword searches of arXiv are not proof of absence.
+Theory also disagrees on direction: \citet{zhou2020towards} predict that SGD escapes a given basin faster than Adam, while a common intuition holds the reverse.
+On one hand, the SDE view gives clean scaling laws.
+On the other hand, few measurements test those laws against exact minima and saddles.
+
+We test four numerical claims about escape.
+(H1) Escape times are Weibull, not exponential, with shape $k$ in 0.7--1.3 depending on geometry.
+(H2) Adam escapes narrow basins 2--5$\times$ faster than SGD, with similar times at wide basins.
+(H3) Doubling the batch size $B$ at fixed learning rate $\eta$ multiplies mean escape time by $\sqrt{2}$, with $B/\eta$ setting temperature.
+(H4) Hessian eigenvalue gaps at saddles predict the escape direction with 70--85\% accuracy.
+We fix the pass criteria before any experiment.
+We then run hundreds of independent replicas of real SGD and Adam from the same exact minimum or saddle of a small tanh network, and we decide exit by quenching each replica to the minimum it belongs to (see \algref{alg:quench}).
+
+None of the four claims holds as stated, and each fails in an informative way.
+Exponential times are rejected in 86\% of conditions, but only 32\% of fitted $k$ values lie in 0.7--1.3 (median 1.47), and $k$ shows no relation to sharpness.
+Discarding the earliest quarter of exits moves median $k$ from 1.47 to 1.03.
+Doubling $B$ multiplies escape time by 5.1 [3.4, 8.0], about $\tau\propto B^{2}$, not $\sqrt{B}$.
+Adam is about $2\times$ faster at matched in-basin loss and slower by at least 7--34$\times$ at its default learning rate.
+At low noise, saddle exit follows the top eigenvector in 82--86\% of runs, yet the gap does not predict that share.
+
+\noindent Our contributions are:
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+    \item We build an escape-time instrument for real networks from exact critical points, converged quenching and interval-censored fits, and we validate it against the exact Kramers rate.
+    \item We measure the shape of escape-time distributions across 28 well-observed conditions, and we decompose non-exponentiality into a start-up delay and heterogeneity across minima.
+    \item We show that batch size acts far more strongly than a $\sqrt{B}$ law, and that the sign of the Adam--SGD comparison depends on learning-rate calibration.
+    \item We show that saddle exit is highly reproducible even when it leaves the top eigenvector, which a linearized model cannot explain.
+\end{itemize}
+
+\vspace{4pt}
+\noindent \Secref{sec:related} reviews prior work, \secref{sec:method} describes our method, \secref{sec:results} reports results, and \secref{sec:discussion} discusses them.

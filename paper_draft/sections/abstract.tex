@@ -1,0 +1,10 @@
+Theories of flat-minima bias rest on mean escape-time formulas, yet the full distribution of how long an optimizer stays in a basin is rarely measured.
+We measure it: we run SGD and Adam from exact minima and true saddles of small tanh networks on \fmnist and \digitsdata, across 165 conditions and 17,474 exits, and decide exit by converged quenching.
+Our simulator recovers the exact Kramers rate on a double well (median ratio 1.07).
+We test four numerical claims, and none holds as stated.
+Exponential times are rejected in 86\% of conditions, but Weibull is the best model in only 4 of 28, its shape $k$ lies in 0.7--1.3 in only 32\%, and $k$ is unrelated to curvature ($\rho=-0.06$).
+Most of the deviation from $k=1$ comes from a start-up delay (refitting after early exits gives $k=1.03$) and from mixing across minima (pooling gives $k=0.52$--$0.74$).
+Doubling the batch size multiplies escape time by 5.1, not $\sqrt{2}$, while $\etaB$ still sets the time scale on \fmnist to within about 10\%.
+Adam escapes about $2\times$ faster than SGD at matched in-basin loss, with no demonstrated dependence on basin width, but makes no exits at its default learning rate.
+Saddle exit follows the top eigenvector 82--86\% of the time at low noise and 54\% at high noise, and the eigenvalue gap does not predict that share.
+Escape is a discrete, delayed hop whose rate depends on noise and on the specific minimum.

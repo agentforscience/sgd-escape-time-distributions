@@ -1,0 +1,41 @@
+\section{Preregistered Criteria and Deviations}
+\label{app:prereg}
+
+\Tabref{tab:prereg} lists the criteria we fixed before any experiment, with the outcome of each.
+
+\begin{table}[h]
+    \centering
+    \caption{Preregistered criteria and outcomes. Values are for \fmnist unless noted.}
+    \label{tab:prereg}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{@{}lll@{}}
+        \toprule
+        \textbf{ID} & \textbf{Criterion} & \textbf{Outcome} \\
+        \midrule
+        H1a & LRT rejects $k=1$ (FDR 5\%) in a majority, $|\Delta\text{AIC}|>10$ & Met: 86\% and 75\% \\
+        H1b & $k$ in [0.7, 1.3] in $\ge$90\%, with both $k<1$ and $k>1$ present & Not met: 32\% \\
+        H1c & Spearman $\rho(k,\log\text{sharpness})$ significant, $p<.05$ & Not met: $p=.77$ \\
+        H2a & Narrow $\tau_{\text{SGD}}/\tau_{\text{Adam}}$ CI inside [2, 5] & Not met: [1.89, 5.18] \\
+        H2b & Wide ratio CI inside [0.67, 1.5] & Not met: [1.24, 3.22] \\
+        H2c & Narrow/wide ratio-of-ratios $>1$ & Not significant: 1.46 [0.74, 3.09] \\
+        H3a & Slope CI contains 0.5, excludes 0 and 1 & Not met: [1.64, 2.41] \\
+        H3b & Power law beats Arrhenius by AIC & Met in the observed range: $-$16.7 vs $+$16.1 \\
+        H3c & Same $\etaB$ gives same $\tau\eta$ within CI & Partly met: 1.03 [0.97, 1.11] and 0.89 [0.86, 0.93] (5 minima) \\
+        H4a & Top-eigenvector accuracy CI overlaps [70, 85]\% and exceeds chance & Met at lower noise ($r=1$); not at high noise \\
+        H4b & Accuracy increases with gap & Not met: $\rho$ from $-0.07$ to $+0.23$, n.s. \\
+        \bottomrule
+    \end{tabular}
+    }
+\end{table}
+
+\para{Deviations from the plan.}
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+    \item We replaced the planned short quench with the converged quench, before production, for the reason in \secref{sec:method}.
+    \item We added the barrier-or-loss rule after the Newton audit and reran the 10 affected runs with the same seeds.
+    \item We moved the base condition from $\eta=0.2$ to $\eta=0.1$, because at $\eta=0.2$ escape competes with in-well relaxation. We kept $\eta=0.2$ as the hot condition.
+    \item We made \fmnist at weight decay $10^{-4}$ the main landscape, because weight decay made \digitsdata minima nearly uniform in sharpness.
+    \item We used a smaller network for saddles, because mode-following Newton did not converge at 290 parameters. We rejected symmetric saddles, because per-sample gradients vanish along their escape directions.
+    \item We saved but did not analyse the secondary loss-level and radius first-passage definitions, and we analysed quench-length and exit-rule robustness instead.
+    \item 165 of 166 jobs finished. The missing job is default-learning-rate Adam at the sharpest minimum.
+    \item We did not fix the H4 radius in advance, so we report all three radii and all three noise levels.
+\end{itemize}

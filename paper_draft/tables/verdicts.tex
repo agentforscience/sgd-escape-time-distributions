@@ -1,0 +1,25 @@
+\begin{table}[t]
+    \centering
+    \caption{Verdicts on each numerical claim. Ranges in brackets are 95\% confidence intervals. Unless noted, values are for \fmnist. $k$ statistics cover 28 conditions.}
+    \label{tab:verdicts}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{@{}lll@{}}
+        \toprule
+        \textbf{Claim} & \textbf{Verdict} & \textbf{Key measurement} \\
+        \midrule
+        Weibull, not exponential & Partly & $k=1$ rejected in 86\%; Weibull best by AIC in 4 of 28 \\
+        $k$ between 0.7 and 1.3 & Refuted & 32\% in range; median 1.47, maximum 3.33 \\
+        $k$ depends on geometry & Refuted & $\rho(k,\log\lmax)=-0.06$, $p=.77$ \\
+        \midrule
+        Adam 2--5$\times$ faster at narrow basins & Partly & 2.75$\times$ [1.89, 5.18]; 2.01$\times$ with medians observed \\
+        Adam similar at wide basins & Refuted & 1.89$\times$ [1.24, 3.22]; no significant narrow/wide difference \\
+        \midrule
+        Doubling $B$ multiplies $\tau$ by $\sqrt{2}$ & Refuted & $\times$5.1 [3.4, 8.0]; slope 2.02 [1.64, 2.41], against 0.5 \\
+        $\etaB$ controls temperature & Supported on \fmnist & Equal-ratio $\tau\eta$ within about 10\%; \digitsdata inconclusive (cap) \\
+        \midrule
+        Top eigenvector predicts exit, 70--85\% & Noise-dependent & 54\% at high noise, 82--86\% at lower noise ($r=1$) \\
+        Eigenvalue gap predicts accuracy & Refuted & $\rho$ from $-0.07$ to $+0.23$, all n.s. \\
+        \bottomrule
+    \end{tabular}
+    }
+\end{table}

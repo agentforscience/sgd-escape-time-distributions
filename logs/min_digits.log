@@ -1,0 +1,34 @@
+/data/summereunann/neurico-workspaces/sgd_escape_time_distributions_20261030_140000_math01/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+{'name': 'digits_s0_p0', 'L': 0.1085, 'acc': 1.0, 'lmax': 0.4514, 'trace': 12.8078, 'norm': 12.2169}
+{'name': 'digits_s0_p1', 'L': 0.104, 'acc': 1.0, 'lmax': 0.4776, 'trace': 11.9674, 'norm': 12.022}
+{'name': 'digits_s0_p2', 'L': 0.1074, 'acc': 0.9989, 'lmax': 0.5007, 'trace': 11.9906, 'norm': 12.101}
+{'name': 'digits_s0_p3', 'L': 0.1071, 'acc': 0.9994, 'lmax': 0.4193, 'trace': 11.5347, 'norm': 12.1232}
+{'name': 'digits_s0_p4', 'L': 0.1066, 'acc': 0.9994, 'lmax': 0.3483, 'trace': 12.2155, 'norm': 12.072}
+{'name': 'digits_s0_p5', 'L': 0.106, 'acc': 0.9989, 'lmax': 0.5368, 'trace': 12.0147, 'norm': 12.0667}
+{'name': 'digits_s0_p6', 'L': 0.1058, 'acc': 0.9983, 'lmax': 0.4172, 'trace': 12.2548, 'norm': 11.9594}
+reject 0 7 0.004973208137184002 -0.001967034778734906
+{'name': 'digits_s1_p0', 'L': 0.1055, 'acc': 1.0, 'lmax': 0.3415, 'trace': 11.1041, 'norm': 12.0914}
+{'name': 'digits_s1_p1', 'L': 0.1055, 'acc': 0.9994, 'lmax': 0.3557, 'trace': 11.7676, 'norm': 12.0535}
+{'name': 'digits_s1_p2', 'L': 0.105, 'acc': 0.9989, 'lmax': 0.371, 'trace': 11.2842, 'norm': 11.9888}
+{'name': 'digits_s1_p3', 'L': 0.1063, 'acc': 0.9994, 'lmax': 0.3855, 'trace': 12.0005, 'norm': 12.0836}
+{'name': 'digits_s1_p4', 'L': 0.1099, 'acc': 0.9994, 'lmax': 0.4306, 'trace': 12.5212, 'norm': 12.2829}
+{'name': 'digits_s1_p5', 'L': 0.1075, 'acc': 1.0, 'lmax': 0.5819, 'trace': 13.9019, 'norm': 12.1457}
+{'name': 'digits_s1_p6', 'L': 0.107, 'acc': 0.9994, 'lmax': 0.3739, 'trace': 11.8913, 'norm': 12.0958}
+reject 1 7 0.0027095642807050168 -0.003529006343700539
+{'name': 'digits_s2_p0', 'L': 0.1066, 'acc': 1.0, 'lmax': 0.4213, 'trace': 12.2186, 'norm': 12.1555}
+{'name': 'digits_s2_p1', 'L': 0.1136, 'acc': 0.9994, 'lmax': 0.3786, 'trace': 14.155, 'norm': 12.3292}
+{'name': 'digits_s2_p2', 'L': 0.1063, 'acc': 0.9994, 'lmax': 0.4166, 'trace': 11.8819, 'norm': 12.1572}
+{'name': 'digits_s2_p3', 'L': 0.1059, 'acc': 1.0, 'lmax': 0.358, 'trace': 12.7373, 'norm': 12.0864}
+{'name': 'digits_s2_p4', 'L': 0.1069, 'acc': 1.0, 'lmax': 0.3882, 'trace': 12.4366, 'norm': 12.1186}
+{'name': 'digits_s2_p5', 'L': 0.106, 'acc': 0.9994, 'lmax': 0.4533, 'trace': 13.0919, 'norm': 12.0697}
+{'name': 'digits_s2_p6', 'L': 0.1076, 'acc': 1.0, 'lmax': 0.4793, 'trace': 12.2355, 'norm': 12.1551}
+reject 2 7 0.005344879197760369 -0.00048011922777558327
+{'name': 'digits_s3_p0', 'L': 0.1088, 'acc': 0.9989, 'lmax': 0.3986, 'trace': 12.4727, 'norm': 12.0833}
+{'name': 'digits_s3_p1', 'L': 0.1066, 'acc': 0.9994, 'lmax': 0.4559, 'trace': 12.6517, 'norm': 12.0355}
+{'name': 'digits_s3_p2', 'L': 0.1072, 'acc': 1.0, 'lmax': 0.4356, 'trace': 12.3582, 'norm': 12.2255}
+{'name': 'digits_s3_p3', 'L': 0.1055, 'acc': 0.9994, 'lmax': 0.378, 'trace': 11.8887, 'norm': 12.0463}
+{'name': 'digits_s3_p4', 'L': 0.1103, 'acc': 1.0, 'lmax': 0.3948, 'trace': 11.6508, 'norm': 12.3335}
+{'name': 'digits_s3_p5', 'L': 0.1043, 'acc': 0.9994, 'lmax': 0.4039, 'trace': 11.8662, 'norm': 11.9771}
+{'name': 'digits_s3_p6', 'L': 0.1051, 'acc': 0.9994, 'lmax': 0.4002, 'trace': 12.9318, 'norm': 12.0291}
+reject 3 7 0.019182952444552075 -0.004692504658002128

@@ -1,0 +1,18 @@
+/data/summereunann/neurico-workspaces/sgd_escape_time_distributions_20261030_140000_math01/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+{'name': 'fmnist_wd0.01_s0_p0', 'L': 0.862, 'acc': 0.814, 'lmax': 0.5695, 'trace': 23.7304, 'norm': 7.3199}
+{'name': 'fmnist_wd0.01_s0_p1', 'L': 0.8646, 'acc': 0.81, 'lmax': 0.5707, 'trace': 23.9139, 'norm': 7.3638}
+{'name': 'fmnist_wd0.01_s0_p2', 'L': 0.8624, 'acc': 0.818, 'lmax': 0.5726, 'trace': 24.0738, 'norm': 7.3883}
+{'name': 'fmnist_wd0.01_s0_p3', 'L': 0.8654, 'acc': 0.813, 'lmax': 0.5676, 'trace': 23.4806, 'norm': 7.345}
+{'name': 'fmnist_wd0.01_s0_p4', 'L': 0.8675, 'acc': 0.808, 'lmax': 0.539, 'trace': 23.9867, 'norm': 7.3417}
+{'name': 'fmnist_wd0.01_s0_p5', 'L': 0.8647, 'acc': 0.811, 'lmax': 0.5616, 'trace': 23.8644, 'norm': 7.3398}
+{'name': 'fmnist_wd0.01_s0_p6', 'L': 0.8607, 'acc': 0.813, 'lmax': 0.5729, 'trace': 24.1025, 'norm': 7.3643}
+{'name': 'fmnist_wd0.01_s0_p7', 'L': 0.861, 'acc': 0.813, 'lmax': 0.5594, 'trace': 23.5557, 'norm': 7.3839}
+{'name': 'fmnist_wd0.01_s1_p0', 'L': 0.8651, 'acc': 0.8085, 'lmax': 0.5192, 'trace': 23.4432, 'norm': 7.3694}
+{'name': 'fmnist_wd0.01_s1_p1', 'L': 0.864, 'acc': 0.8115, 'lmax': 0.5714, 'trace': 24.2073, 'norm': 7.3649}
+{'name': 'fmnist_wd0.01_s1_p2', 'L': 0.8614, 'acc': 0.8085, 'lmax': 0.542, 'trace': 23.322, 'norm': 7.3221}
+{'name': 'fmnist_wd0.01_s1_p3', 'L': 0.8654, 'acc': 0.8105, 'lmax': 0.5658, 'trace': 24.0053, 'norm': 7.3725}
+{'name': 'fmnist_wd0.01_s1_p4', 'L': 0.866, 'acc': 0.814, 'lmax': 0.5347, 'trace': 23.3602, 'norm': 7.3729}
+{'name': 'fmnist_wd0.01_s1_p5', 'L': 0.8694, 'acc': 0.814, 'lmax': 0.5427, 'trace': 23.6668, 'norm': 7.4319}
+{'name': 'fmnist_wd0.01_s1_p6', 'L': 0.863, 'acc': 0.812, 'lmax': 0.5374, 'trace': 24.0723, 'norm': 7.3843}
+{'name': 'fmnist_wd0.01_s1_p7', 'L': 0.8613, 'acc': 0.813, 'lmax': 0.5377, 'trace': 23.8164, 'norm': 7.3705}

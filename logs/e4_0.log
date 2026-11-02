@@ -1,0 +1,5 @@
+/data/summereunann/neurico-workspaces/sgd_escape_time_distributions_20261030_140000_math01/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+S_w0_t21 index 2 lam [0.00065 0.00019] r=1 counts [97, 31] p_full [0.99 0.01] 970s
+S_w2_t47 index 2 lam [0.0016  0.00025] r=1 counts [31, 97] p_full [1. 0.] 760s
+S_w4_t47 index 2 lam [0.00024 0.0001 ] r=1 counts [128, 0] p_full [0.95 0.05] 1370s

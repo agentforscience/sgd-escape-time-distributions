@@ -1,0 +1,1 @@
+{'job': 'E1__fmnist_wd0.0001_s1_p1__sgd_lr0.1_B16', 'device': 'cuda:1', 'share_identical': 1.0, 'median_a': 5.0, 'median_b': 5.0}

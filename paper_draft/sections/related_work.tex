@@ -1,0 +1,33 @@
+\section{Related Work}
+\label{sec:related}
+
+\para{Kramers escape.}
+\citet{kramers1940brownian} gives the overdamped rate over a barrier $\Delta E$ at temperature $T$ as $\kappa=\frac{\sqrt{a|b|}}{2\pi}\exp(-\Delta E/T)$, with $a$ and $b$ the curvatures at the well and the saddle.
+At high barrier the exit is a Poisson process, so first-passage times are exponential ($k=1$).
+Any deviation must come from outside that limit, such as a relaxation transient, a low barrier or a mixture of rates.
+We use this exact result to validate our instrument, and then ask which of these sources act in real networks.
+
+\para{SGD as an SDE.}
+\citet{mandt2017stochastic}, \citet{smith2018bayesian} and \citet{jastrzebski2018three} derive a temperature that scales as $\etaB$.
+\citet{zhu2019anisotropic} show that anisotropic noise aligned with sharp directions speeds escape from sharp minima.
+With noise covariance close to the Hessian, \citet{xie2021diffusion} find mean escape time exponential in $(B/\eta)\,\Delta L/H$.
+With noise proportional to the loss, \citet{mori2022powerlaw} find a rate that is a power law in the ratio $L(\vtheta_s)/L(\tstar)$, while $\log\tau$ stays linear in $B/\eta$.
+\citet{ibayashi2021exponential} prove exponential escape efficiency without a stationary distribution, and \citet{simsekli2019tail} argue for heavy-tailed noise, whose L\'evy models give a polynomial dependence on barrier height.
+No theory above predicts $\tau\propto\sqrt{B}$.
+Unlike this line of work, which studies mean rates, we measure the distribution and its censored tail.
+
+\para{Adam versus SGD.}
+\citet{zhou2020towards} show with a L\'evy SDE that, for the same basin, SGD has a smaller escape time than Adam (\citet{kingma2015adam}), because adaptive scaling enlarges the basin's Radon measure and smooths noise tails.
+\citet{xie2022adaptive} separate the two parts of Adam: adaptive learning rates escape saddles efficiently but do not select flat minima as SGD does, while momentum helps pass saddles and hardly affects flat-minima selection.
+We found no direct measurement of an Adam-to-SGD escape ratio split by basin width.
+Any such ratio depends on how the two learning rates are matched, so we make that calibration explicit and report how the result changes with it.
+
+\para{Saddles.}
+\citet{jin2017escape} and \citet{daneshmand2018escaping} bound the rate of saddle escape under perturbation or intrinsic gradient noise, and neither claims which negative eigendirection wins.
+\citet{fukumizu2000local} and \citet{simsek2021geometry} show that unit duplication and symmetry create true saddles in small networks.
+We add a measurement of the winning direction at nonsymmetric saddles found by mode-following Newton, and we compare it with a linearized model that uses the measured noise covariance.
+
+\para{Sharpness caveats.}
+\citet{keskar2017large} link sharpness to large-batch training, and \citet{dinh2017sharp} show that sharpness is not invariant to reparameterization.
+We report $\lmax$ and trace in one fixed parameterization and use them descriptively.
+\citet{yaida2019fluctuation} give fluctuation-dissipation checks for stationarity, which motivates our attention to the transient that follows a start at $\tstar$.

@@ -1,0 +1,18 @@
+/data/summereunann/neurico-workspaces/sgd_escape_time_distributions_20261030_140000_math01/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+{'name': 'digits_wd0.0001_s0_p0', 'L': 0.0208, 'acc': 1.0, 'lmax': 0.1366, 'trace': 3.3576, 'norm': 17.7202}
+{'name': 'digits_wd0.0001_s0_p1', 'L': 0.0216, 'acc': 1.0, 'lmax': 0.1417, 'trace': 3.6704, 'norm': 18.0413}
+{'name': 'digits_wd0.0001_s0_p2', 'L': 0.0209, 'acc': 1.0, 'lmax': 0.1613, 'trace': 2.8511, 'norm': 17.7837}
+{'name': 'digits_wd0.0001_s0_p3', 'L': 0.021, 'acc': 1.0, 'lmax': 0.1115, 'trace': 2.9078, 'norm': 17.8163}
+{'name': 'digits_wd0.0001_s0_p4', 'L': 0.0197, 'acc': 1.0, 'lmax': 0.1192, 'trace': 2.9134, 'norm': 17.342}
+reject 0 5 0.006645416261873805 -0.00032800130571226623
+reject 0 6 0.0008955804518047238 5.58520661268778e-05
+reject 0 7 0.006991960409183765 -0.003076939342088631
+{'name': 'digits_wd0.0001_s1_p0', 'L': 0.0198, 'acc': 1.0, 'lmax': 0.0894, 'trace': 2.6069, 'norm': 17.4343}
+{'name': 'digits_wd0.0001_s1_p1', 'L': 0.0205, 'acc': 1.0, 'lmax': 0.1301, 'trace': 3.081, 'norm': 17.6889}
+{'name': 'digits_wd0.0001_s1_p2', 'L': 0.0201, 'acc': 1.0, 'lmax': 0.1066, 'trace': 2.885, 'norm': 17.3876}
+{'name': 'digits_wd0.0001_s1_p3', 'L': 0.0199, 'acc': 1.0, 'lmax': 0.1052, 'trace': 3.1456, 'norm': 17.4023}
+{'name': 'digits_wd0.0001_s1_p4', 'L': 0.0203, 'acc': 1.0, 'lmax': 0.1756, 'trace': 3.4664, 'norm': 17.5341}
+reject 1 5 0.0035505627899085216 -0.023765662721368284
+reject 1 6 0.0001114156892953375 1.618227019338037e-05
+reject 1 7 0.0065299562820849534 -0.08420621355404417

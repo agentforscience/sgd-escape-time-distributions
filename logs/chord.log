@@ -1,0 +1,8 @@
+digits_wd0.001_s1_p0__sgd_lr0.1_B16 n 189 false 2 stuck(gn>1e-4) 187 nobar&notfalse 0 bar&false 2 med d1 of real 1.255
+digits_wd0.001_s1_p0__sgd_lr0.2_B16 n 128 false 30 stuck(gn>1e-4) 100 nobar&notfalse 0 bar&false 30 med d1 of real 1.280
+digits_wd0.001_s1_p5__sgd_lr0.2_B16 n 128 false 0 stuck(gn>1e-4) 128 nobar&notfalse 0 bar&false 0 med d1 of real 0.700
+digits_wd0.001_s1_p6__sgd_lr0.2_B16 n 31 false 0 stuck(gn>1e-4) 31 nobar&notfalse 0 bar&false 0 med d1 of real 0.466
+digits_wd0.001_s3_p0__sgd_lr0.1_B16 n 116 false 0 stuck(gn>1e-4) 116 nobar&notfalse 0 bar&false 0 med d1 of real 4.328
+digits_wd0.001_s3_p0__sgd_lr0.2_B16 n 126 false 0 stuck(gn>1e-4) 126 nobar&notfalse 0 bar&false 0 med d1 of real 4.332
+digits_wd0.001_s3_p1__sgd_lr0.1_B16 n 256 false 0 stuck(gn>1e-4) 256 nobar&notfalse 256 bar&false 0 med d1 of real 0.554
+digits_wd0.001_s3_p1__sgd_lr0.2_B16 n 128 false 0 stuck(gn>1e-4) 128 nobar&notfalse 128 bar&false 0 med d1 of real 0.554

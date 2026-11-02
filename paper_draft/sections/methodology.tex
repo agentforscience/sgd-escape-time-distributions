@@ -1,0 +1,102 @@
+\section{Method}
+\label{sec:method}
+
+\para{Problem formulation.}
+Let $\tstar$ be a strict local minimum of a regularized loss $L$, with Hessian eigenvalues up to $\lmax$.
+We start $R$ independent replicas of an optimizer at $\tstar$, with separate minibatch draws.
+The escape time $T$ of a replica is the first step at which gradient flow from $\vtheta_t$ no longer returns to $\tstar$.
+We write $\tau$ for the Kaplan--Meier median of $T$.
+We compare the Weibull survival function with its rivals,
+\begin{equation}
+    S(t)=\exp\big(-(t/\lambda)^{k}\big),
+    \label{eq:weibull}
+\end{equation}
+where $k=1$ is the exponential law of Kramers escape, $k>1$ means a rising hazard, and $k<1$ means a falling hazard.
+
+\para{Models and data.}
+We choose one-hidden-layer tanh networks with cross entropy plus L2, because tanh gives exact Hessians, and because L2 and underparameterization give strict minima with nonzero per-sample gradients.
+\Tabref{tab:landscapes} lists the three landscapes.
+We take 12 minima on landscape A and 6 on landscape B, chosen evenly in $\lmax$ rank before any escape measurement and Newton-polished in float64 ($\|\nabla L\|<10^{-7}$, positive definite Hessian).
+
+\begin{table}[t]
+    \centering
+    \caption{The three landscapes. All networks have one tanh hidden layer of width $h$. Inputs for A and S are 24 PCA dimensions.}
+    \label{tab:landscapes}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{@{}lllcccl@{}}
+        \toprule
+        & \textbf{Role} & \textbf{Data} & $h$ & \textbf{Weight decay} & \textbf{Parameters} & $\lmax$ \\
+        \midrule
+        A & Main & \fmnist \citep{xiao2017fashion}, 2,000 examples & 8 & $10^{-4}$ & 290 & 0.62--5.48 \\
+        B & Replication & \digitsdata \citep{alpaydin1998optical}, 1,797 examples & 8 & $10^{-3}$ & 610 & 0.34--0.58 \\
+        S & Saddles & \fmnist, as A & 3 & $10^{-4}$ & 115 & -- \\
+        \bottomrule
+    \end{tabular}
+    }
+\end{table}
+
+\para{Optimizers.}
+We run SGD and Adam ($\beta$ values 0.9 and 0.999), with ablations for \rmsprop, \sgdm ($\beta=0.9$, $\eta=0.01$, same effective step as SGD at $\eta=0.1$), and warm-started Adam.
+Each replica draws its own fixed-size minibatches.
+We use $R=256$ at the base condition and 128 elsewhere (64 for default Adam), with a cap of 150,000 steps.
+The simulation runs in float32 on shared GPUs (about 29 worker-hours); fits and Hessians use the CPU.
+
+\para{{\bf What counts as an exit?}}
+At geometrically spaced checks (10\% spacing, minimum gap 100 steps), we copy each replica and relax the copy by full-batch heavy-ball descent (\algref{alg:quench}).
+A replica has exited if the relaxed point converges to a different minimum.
+Times are interval-censored between checks.
+
+\begin{algorithm}[t]
+\caption{Exit check for one replica}
+\label{alg:quench}
+\begin{algorithmic}[1]
+\State \textbf{Input:} replica $\vtheta_t$, minimum $\tstar$, loss $L$, sharpness $\lmax$
+\State $q \gets \max(1,\lmax)$; \quad $\tilde\vtheta \gets \vtheta_t$ \Comment{{\small\it work on a copy}}
+\State Relax $\tilde\vtheta$ for $1{,}500\,q$ heavy-ball steps ($\text{lr}=1/\lmax$, $\beta=0.9$)
+\If{$\|\tilde\vtheta-\tstar\|\le 0.3$} \textbf{return} in basin \Comment{{\small\it cheap gate}}
+\EndIf
+\State Continue relaxing up to $5{,}000\,q$ total steps
+\State $d\gets\|\tilde\vtheta-\tstar\|$; \quad $b\gets$ barrier on the segment from $\tilde\vtheta$ to $\tstar$; \quad $\Delta L\gets L(\tilde\vtheta)-L(\tstar)$
+\If{$d>0.05$ \textbf{and} ($b>10^{-5}$ \textbf{or} $|\Delta L|>2\times10^{-5}$)} \textbf{return} exited
+\EndIf
+\State \textbf{return} in basin \Comment{{\small\it slow soft mode, not a new minimum}}
+\end{algorithmic}
+\end{algorithm}
+
+This rule survived two failures, both found by testing it.
+First, short quenches mislead: a 400-step quench reported 0--34\% exited where a converged quench reported up to 97\%.
+Second, slow soft modes give false exits: a Newton audit found that 495 of the first 6,337 exits (7.8\%) polished back to $\tstar$, and in one minimum 71\% of exits were false.
+We added the barrier-or-loss rule and repeated the affected runs with the same seeds.
+A barrier test alone would be wrong, because one \digitsdata minimum has a real neighbour with no segment barrier.
+
+\para{Experiments.}
+E0 is a controlled 8-dimensional double well in the Gaussian minibatch-noise limit, with 1,000 replicas per condition.
+It validates the instrument against Kramers, and it does not model a network.
+E1 measures shape at all minima with SGD, $B=16$, $\eta\in\{0.1,0.2\}$.
+E2 compares Adam with SGD at Adam learning rates $\{0.004,0.008,0.016\}$ on A and $\{0.001,0.002\}$ on B.
+We interpolate the median in $\log\eta$ to the per-minimum matched rate, where matched means equal mean excess full loss over steps 500--2,000, well before most exits.
+Matched rates are 0.0055--0.0109 on A and 0.00135--0.00152 on B.
+We define wide and narrow as the bottom and top thirds by $\lmax$ ($n=4$ each on A).
+E3 uses 6 (A) and 3 (B) minima with $B\in\{4,8,16,32,64\}$ at $\eta=0.1$, plus the equal-ratio triple $(\eta,B)\in\{(0.05,8),(0.1,16),(0.2,32)\}$.
+E4 uses 30 unique saddles from mode-following Newton ($\|\nabla L\|<10^{-9}$), mostly index 2, with $R=128$ and $(\eta,B)\in\{(0.1,16),(0.02,16),(0.1,64)\}$.
+The winning eigenvector has the largest absolute projection at first crossing of radius $r$ in the negative subspace.
+
+\para{Baselines.}
+For shape, the baseline is the exponential law, tested against Weibull, gamma, lognormal and shifted exponential.
+For H3, the rival to a power law in $B$ is the Arrhenius form with $\log\tau$ linear in $B$.
+For saddles, the baselines are chance (0.46 on average) and a linearized Monte-Carlo model with the measured per-sample noise covariance $\sigma_i$, in which component $i$ grows as
+\begin{equation}
+    z_i\,\sigma_i\,(1+\eta|\lambda_i|)^{t},\qquad z_i\sim\gN(0,1).
+    \label{eq:linear}
+\end{equation}
+
+\para{Statistics.}
+We fit all models by interval-censored maximum likelihood.
+On simulated data, $k_{\text{true}}=0.7,1.0,1.3$ gives 0.71, 1.03, 1.29, with 5\% false rejection of $k=1$.
+We apply Benjamini--Hochberg control at 5\% to likelihood-ratio tests.
+Confidence intervals for $k$ use 100 bootstrap replicates of replicas, and cross-minimum intervals bootstrap {\em minima}, the unit of generalization.
+When the median is not reached, we hold $\tau$ at the 150,000-step lower bound and flag it; Weibull extrapolations reached $10^{9}$.
+Flagged medians are excluded from slope and factor fits.
+H1 analyses use conditions with at least 50\% exits (28 of 36 E1 conditions).
+All intervals are 95\%.
+\Tabref{tab:prereg} in appendix~\ref{app:prereg} lists the criteria we fixed in advance.

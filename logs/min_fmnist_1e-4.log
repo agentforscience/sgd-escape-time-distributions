@@ -1,0 +1,18 @@
+/data/summereunann/neurico-workspaces/sgd_escape_time_distributions_20261030_140000_math01/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+{'name': 'fmnist_wd0.0001_s0_p0', 'L': 0.3785, 'acc': 0.876, 'lmax': 1.2889, 'trace': 23.8542, 'norm': 25.7372}
+{'name': 'fmnist_wd0.0001_s0_p1', 'L': 0.3845, 'acc': 0.874, 'lmax': 0.8347, 'trace': 21.7146, 'norm': 24.9043}
+{'name': 'fmnist_wd0.0001_s0_p2', 'L': 0.3592, 'acc': 0.887, 'lmax': 0.7637, 'trace': 19.6838, 'norm': 25.583}
+{'name': 'fmnist_wd0.0001_s0_p3', 'L': 0.3824, 'acc': 0.861, 'lmax': 1.0271, 'trace': 22.5286, 'norm': 25.2857}
+{'name': 'fmnist_wd0.0001_s0_p4', 'L': 0.3881, 'acc': 0.8655, 'lmax': 2.176, 'trace': 35.8254, 'norm': 25.356}
+{'name': 'fmnist_wd0.0001_s0_p5', 'L': 0.384, 'acc': 0.881, 'lmax': 1.0707, 'trace': 21.4259, 'norm': 25.2767}
+{'name': 'fmnist_wd0.0001_s0_p6', 'L': 0.3932, 'acc': 0.868, 'lmax': 1.2689, 'trace': 24.166, 'norm': 27.0887}
+{'name': 'fmnist_wd0.0001_s0_p7', 'L': 0.4176, 'acc': 0.8665, 'lmax': 1.0241, 'trace': 20.1318, 'norm': 24.9383}
+{'name': 'fmnist_wd0.0001_s1_p0', 'L': 0.3732, 'acc': 0.8795, 'lmax': 0.621, 'trace': 17.3461, 'norm': 25.5284}
+{'name': 'fmnist_wd0.0001_s1_p1', 'L': 0.3756, 'acc': 0.8775, 'lmax': 5.4772, 'trace': 38.8041, 'norm': 27.1735}
+{'name': 'fmnist_wd0.0001_s1_p2', 'L': 0.3778, 'acc': 0.882, 'lmax': 2.7264, 'trace': 26.3299, 'norm': 25.8643}
+{'name': 'fmnist_wd0.0001_s1_p3', 'L': 0.3949, 'acc': 0.8575, 'lmax': 1.2695, 'trace': 23.0817, 'norm': 24.7796}
+{'name': 'fmnist_wd0.0001_s1_p4', 'L': 0.3824, 'acc': 0.8705, 'lmax': 0.7017, 'trace': 19.4677, 'norm': 26.11}
+{'name': 'fmnist_wd0.0001_s1_p5', 'L': 0.3896, 'acc': 0.8745, 'lmax': 1.2867, 'trace': 29.6588, 'norm': 25.7346}
+{'name': 'fmnist_wd0.0001_s1_p6', 'L': 0.3902, 'acc': 0.8715, 'lmax': 0.8276, 'trace': 21.2639, 'norm': 24.771}
+{'name': 'fmnist_wd0.0001_s1_p7', 'L': 0.3997, 'acc': 0.864, 'lmax': 2.1686, 'trace': 31.6609, 'norm': 27.5317}

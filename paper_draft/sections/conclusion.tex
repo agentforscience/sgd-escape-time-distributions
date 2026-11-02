@@ -1,0 +1,12 @@
+\section{Conclusion}
+\label{sec:conclusion}
+
+We measure escape-time distributions of SGD and Adam from exact minima and saddles of small tanh networks, and we test four numerical claims against criteria fixed in advance.
+Escape from these basins is a discrete hop with a non-constant hazard, shaped mainly by a delay within a minimum and by large differences between minima, not by a Weibull law with $k$ in 0.7--1.3 tied to geometry.
+$\etaB$ is the right control variable on the main landscape, but $\tau$ scales about as $B^{2}$, not $\sqrt{B}$.
+Adam's advantage is real at matched in-basin loss (about $2\times$, from adaptive scaling and not momentum), is not shown to be specific to narrow basins, and disappears at the default learning rate.
+Saddle exit follows $\etop$ at low noise, the gap does not predict how often, and at high noise exit is reproducible along other directions.
+
+The main takeaway is that no single shape parameter summarizes escape: delay, minimum identity and noise level each change the answer.
+Future work should extend run lengths at large $B$ to settle power law versus Arrhenius, start from conditioned quasi-stationary states to measure the delay directly, test the non-$\etop$ saddle exits for noise-induced drift, and repeat these measurements on wider or deeper networks with Hessian-vector quenching.
+One open question remains: why does the hazard fall late within a single minimum, through competing channels or slow drift to harder regions?

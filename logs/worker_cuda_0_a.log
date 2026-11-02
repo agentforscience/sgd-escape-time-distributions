@@ -1,0 +1,44 @@
+done E1__fmnist_wd0.0001_s3_p7__sgd_lr0.1_B16 alive=1/256 wall=667s
+done E1__fmnist_wd0.0001_s2_p3__sgd_lr0.1_B16 alive=0/256 wall=549s
+done E1__digits_wd0.001_s3_p1__sgd_lr0.1_B16 alive=0/256 wall=373s
+done E1__fmnist_wd0.0001_s4_p5__sgd_lr0.2_B16 alive=6/128 wall=536s
+done E1__fmnist_wd0.0001_s1_p1__sgd_lr0.2_B16 alive=0/128 wall=289s
+done E1__digits_wd0.001_s3_p1__sgd_lr0.2_B16 alive=0/128 wall=95s
+done E1__digits_wd0.001_s1_p5__sgd_lr0.2_B16 alive=0/128 wall=461s
+done E3__fmnist_wd0.0001_s2_p3__sgd_lr0.1_B32 alive=0/128 wall=774s
+23:02:26 rc=143 remaining=120
+OOM wait E1__fmnist_wd0.0001_s2_p3__sgd_lr0.2_B16
+done E1__fmnist_wd0.0001_s2_p3__sgd_lr0.2_B16 alive=0/128 wall=652s
+done E3__fmnist_wd0.0001_s2_p3__sgd_lr0.1_B8 alive=0/128 wall=610s
+done E3__fmnist_wd0.0001_s3_p6__sgd_lr0.1_B64 alive=128/128 wall=604s
+done E3__fmnist_wd0.0001_s1_p0__sgd_lr0.05_B8 alive=0/128 wall=580s
+done E3__fmnist_wd0.0001_s5_p3__sgd_lr0.2_B32 alive=0/128 wall=419s
+done E3__digits_wd0.001_s3_p0__sgd_lr0.1_B32 alive=128/128 wall=560s
+done E2__fmnist_wd0.0001_s3_p7__adam_lr0.008_B16 alive=0/128 wall=571s
+done E2__fmnist_wd0.0001_s3_p7__adam_lr0.016_B16 alive=0/128 wall=251s
+done E2__fmnist_wd0.0001_s1_p1__adam_lr0.016_B16 alive=0/128 wall=248s
+done E2__fmnist_wd0.0001_s5_p3__adam_lr0.004_B16 alive=0/128 wall=421s
+done E2__fmnist_wd0.0001_s1_p7__adam_lr0.004_B16 alive=119/128 wall=863s
+done E3__digits_wd0.001_s1_p0__sgd_lr0.1_B64 alive=128/128 wall=441s
+done E3__digits_wd0.001_s1_p5__sgd_lr0.1_B4 alive=0/128 wall=386s
+done E3__digits_wd0.001_s1_p5__sgd_lr0.05_B8 alive=128/128 wall=529s
+done ABL__fmnist_wd0.0001_s5_p3__sgdm_lr0.01_B16 alive=0/128 wall=374s
+done ABL__fmnist_wd0.0001_s0_p6__rmsprop_lr0.008_B16 alive=0/128 wall=680s
+done E2__digits_wd0.001_s1_p0__adam_lr0.002_B16 alive=0/128 wall=579s
+done E2__digits_wd0.001_s3_p0__adam_lr0.001_B16 alive=123/128 wall=589s
+01:40:08 rc=0 remaining=7
+01:40:42 rc=0 remaining=5
+01:41:15 rc=0 remaining=5
+01:41:48 rc=0 remaining=5
+01:42:22 rc=0 remaining=5
+01:42:55 rc=0 remaining=3
+01:43:28 rc=0 remaining=3
+01:44:01 rc=0 remaining=3
+01:44:34 rc=0 remaining=3
+01:45:08 rc=0 remaining=2
+01:45:41 rc=0 remaining=1
+01:46:14 rc=0 remaining=1
+01:46:48 rc=0 remaining=1
+01:47:21 rc=0 remaining=1
+01:47:54 rc=0 remaining=1
+01:48:27 rc=0 remaining=1

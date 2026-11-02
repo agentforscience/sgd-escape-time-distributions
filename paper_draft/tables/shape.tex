@@ -1,0 +1,19 @@
+\begin{table}[t]
+    \centering
+    \caption{Distribution shape across the 28 E1 conditions with at least 50\% exits. Criteria failures in \textbf{bold}.}
+    \label{tab:shape}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{@{}llll@{}}
+        \toprule
+        \textbf{Statistic} & \textbf{Value} & \textbf{Criterion} & \textbf{Met?} \\
+        \midrule
+        Likelihood-ratio test rejects $k=1$ (FDR 5\%) & 86\% & majority & Yes \\
+        $\Delta$AIC(Weibull $-$ exponential) $<-10$ & 75\% & majority & Yes \\
+        $k$ within 0.7--1.3 & 32\% & $\ge$90\% & \textbf{No} \\
+        $k<1$ / $k>1.3$ & 11\% / 68\% & both present & Yes \\
+        $k$ range (median) & 0.79--3.33 (1.47) & -- & -- \\
+        Spearman $k$ vs $\log\lmax$ / $\log$ trace / $\log$ det & $-0.06$ / $-0.08$ / $-0.20$ & $p<.05$ & \textbf{No} ($p=.77$/$.68$/$.31$) \\
+        \bottomrule
+    \end{tabular}
+    }
+\end{table}
